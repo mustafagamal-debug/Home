@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+body{
+  display: flex;
+  justify-content: center;
+  background-image: url("background.jpeg");
+  background-size: cover;
+}
+.shape{
+  border: solid #00000090 0px;
+  border-radius: 20px;
+  height:  500px;
+  width: 700px;
+  
+  position: fixed;
+  top: 500px;
+  z-index: 1;
+  
+  
+  box-shadow: 5px 1px 20px #00000080;
+  
+  
+}
+
+#tarheb{
+  display: flex;
+  justify-content: center;
+  margin-top: 185px;
+  
+  font-size: 80px;
+  font-weight: bolder;
+  font-family: "Lalezar", sans-serif;
+  
+  animation-name: tarheb;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes tarheb{
+  from{opacity: 1;
+  }
+  to{opacity: 0;
+    display: none;
+  }
+}
+
+#text{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Lalezar", sans-serif;
+  
+  display: none;
+  flex-flow: row wrap;
+  text-align: center;
+  margin-top: 200px;
+  
+  transition: 2s;
+  opacity: 0;
+  transition-timing-function: ease-out-in;
+}
+
+#input{
+  display: none;
+  justify-content: center;
+  margin-top: 240px;
+  padding-left: 10px;
+  
+  transition: 4s;
+  opacity: 0;
+  
+  position: fixed;
+  top: 380px;
+  left: 375px;
+  height: 50px;
+  width: 220px;
+  
+  font-size: 30px;
+  font-weight: bold;
+  
+  outline-color: black;
+  background-color: #FFE4C450;
+  box-shadow: 3px 1px 20px #00000080;
+}
+
+#btn{
+  opacity: 0;
+  transition: 1s;
+  
+  position: fixed;
+  left: 435px;
+  
+  width: 100px;
+  height: 60px;
+  
+  font-size: 20px;
+  font-weight: bolder;
+  
+  background-color: #5C7C8A50;
+  box-shadow: 2px 1px 20px #00000080;
+  border-radius: 10px;
+}
+
+#message{
+  display: none;
+  flex-wrap: wrap;
+  
+  transition: 6s;
+  opacity: 0;
+  
+  margin-top: -200px;
+  
+  text-align: center;
+  
+  font-size: 50px;
+  font-family: "Lalezar", sans-serif;
+  font-weight: bolder;
+  
+  
+}
